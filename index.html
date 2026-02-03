@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Valentine ❤️</title>
+
+<style>
+body{
+  margin:0;
+  height:100vh;
+  background:linear-gradient(135deg,#ff758c,#ff7eb3);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-family:'Segoe UI', sans-serif;
+  color:#fff;
+}
+
+.card{
+  background:rgba(255,255,255,0.15);
+  backdrop-filter: blur(10px);
+  padding:30px;
+  border-radius:22px;
+  width:330px;
+  text-align:center;
+  box-shadow:0 20px 40px rgba(0,0,0,0.3);
+}
+
+h1{
+  font-size:24px;
+  margin-bottom:10px;
+}
+
+p{
+  font-size:15px;
+  line-height:1.6;
+}
+
+button{
+  margin-top:12px;
+  padding:10px 24px;
+  border:none;
+  border-radius:25px;
+  background:#ff4d6d;
+  color:white;
+  font-size:14px;
+  cursor:pointer;
+}
+
+button:hover{
+  background:#e8435f;
+}
+
+#reply{
+  margin-top:15px;
+  font-size:15px;
+  color:#fffbe6;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+  <h1>Hey sanu ❤️</h1>
+
+  <p>
+    Having you in my life makes  
+    everything feel warmer and brighter.
+  </p>
+
+  <p>
+    You’re not just special to me —  
+    you’re my favorite person 😊
+  </p>
+
+  <p>
+    Will you be my Valentine? 🥹❤️
+  </p>
+
+  <!-- Background music (tap to play) -->
+  <audio id="music" loop>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+  <button onclick="playMusic()">▶️ Play music</button><br>
+
+  <button onclick="yes()">Yes ❤️</button>
+
+  <p id="reply"></p>
+</div>
+
+<script>
+function playMusic(){
+  document.getElementById("music").play();
+}
+
+function yes(){
+  document.getElementById("reply").innerText =
+  "Thank you, sanu 🥹❤️ I’m really lucky to have you.";
+}
+</script>
+
+</body>
+</html>
